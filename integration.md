@@ -38,7 +38,6 @@ Customer → Theme Platform → WHMCS API → Registrar → DNS → TLS → Live
 Optional but recommended:
 
 * WHMCS **OAuth** for scoped API access.
-* WHMCS **SSO** (CreateSsoToken) if you ever want to deep‑link clients to WHMCS Client Area.
 
 ---
 
