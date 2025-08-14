@@ -10,7 +10,7 @@ This guide describes how to integrate your **Platform** (e.g., `store.domain.com
 
 * **Platform** (your app; UI + backend)
 * **WHMCS** (domain provisioning, billing, registrar modules)
-* **Registrar** (ResellerClub/OpenSRS/etc. via WHMCS)
+* **Registrar** (Ruachost)
 * **DNS & TLS** (your DNS provider and/or registrar DNS; ACME/Let’s Encrypt)
 
 **High‑level flow**
