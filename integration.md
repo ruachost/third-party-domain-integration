@@ -1,6 +1,6 @@
 # WHMCS–Theme Platform Domain Integration Guide (Shopify‑style)
 
-This guide describes how to integrate your **Theme Platform** (e.g., `store.techmock.com`) with **WHMCS** so your merchants can search, purchase, connect, and manage custom domains inside your app—similar to Shopify’s experience.
+This guide describes how to integrate your **Platform** (e.g., `store.domain.com`) with **WHMCS** so your merchants can search, purchase, connect, and manage custom domains inside your app—similar to Shopify’s experience.
 
 ---
 
@@ -8,9 +8,9 @@ This guide describes how to integrate your **Theme Platform** (e.g., `store.tech
 
 **Systems**
 
-* **Theme Platform** (your app; UI + backend)
+* **Platform** (your app; UI + backend)
 * **WHMCS** (domain provisioning, billing, registrar modules)
-* **Registrar** (Namecheap/ResellerClub/OpenSRS/etc. via WHMCS)
+* **Registrar** (ResellerClub/OpenSRS/etc. via WHMCS)
 * **DNS & TLS** (your DNS provider and/or registrar DNS; ACME/Let’s Encrypt)
 
 **High‑level flow**
