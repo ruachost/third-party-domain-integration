@@ -149,13 +149,7 @@ CNAME _acme-challenge  → for DNS‑01 (only if you use DNS‑based ACME)
 * Poll for DNS propagation (HTTP 200 on `http://mybrand.com/.well-known/...` or DNS A/CNAME seen).
 * Run ACME client to obtain/renew certificates; store and attach to tenant’s site/edge.
 
-### 4.7 Transfers (optional)
-
-* **Search transfer eligibility**: `DomainWhois` + transfer pricing
-* **Create transfer**: `DomainTransfer`
-* Collect **EPP/Auth code**, set nameservers during/after transfer.
-
-### 4.8 Renewals
+### 4.7 Renewals
 
 * WHMCS handles invoicing/renewal dates. Sync to your app via cron/webhooks.
 
