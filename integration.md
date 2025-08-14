@@ -21,7 +21,7 @@ Customer → Theme Platform → WHMCS API → Registrar → DNS → TLS → Live
 
 **Core objects**
 
-* **Merchant** (user on Theme Platform)
+* **Merchant** (user on your Platform)
 * **WHMCS Client** (mapped 1:1 to Merchant)
 * **Domain** (lifecycle: search → register/transfer → configure DNS → issue SSL → renew)
 
