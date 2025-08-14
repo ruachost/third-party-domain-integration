@@ -163,7 +163,6 @@ Wire these so your app stays in sync:
 
 * `AfterRegistrarRegistration` → mark domain Active, start DNS + SSL
 * `AfterRegistrarRenewal` → extend expiry in your DB
-* `DomainTransferCompleted`/`DomainTransferFailed`
 * `DailyCronJob` → sync expiring domains (D‑30, D‑7, D‑1)
 
 **Outbound from Theme Platform → WHMCS**
