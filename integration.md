@@ -1,4 +1,4 @@
-# WHMCS–Third Platform Domain Integration Guide
+# WHMCS–Third-party Platform Domain Integration Guide
 
 This guide describes how to integrate your **Platform** (e.g., `store.domain.com`) with **WHMCS** so your merchants can search, purchase, connect, and manage custom domains inside your app—similar to Shopify’s experience.
 
