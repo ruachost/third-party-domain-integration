@@ -46,12 +46,11 @@ Optional but recommended:
 
 1. **Search & Buy a New Domain** (most common)
 2. **Connect Existing Domain** (user already owns one elsewhere)
-3. **Transfer Domain In** (optional)
-4. **Manage Domain** (renewal, WHOIS privacy, nameservers, DNS records)
+3. **Manage Domain** (renewal, WHOIS privacy, nameservers, DNS records)
 
 ---
 
-## 4) API Contract (Theme Platform ⇄ WHMCS)
+## 4) API Contract (Third party Platform ⇄ WHMCS)
 
 ### 4.1 Authentication
 
@@ -102,10 +101,7 @@ firstname=John&lastname=Doe&email=john@example.com&country=NG&password2=••�
 
 ### 4.4 Register Domain
 
-Two options:
-
 * **A)** Direct register via API: `DomainRegister` (recommended when you collect payment in your app)
-* **B)** WHMCS checkout: prefill WHMCS cart and let WHMCS handle payment & invoice
 
 **A) DomainRegister**
 
@@ -125,15 +121,11 @@ Response:
 { "result":"success", "status":"Active" }
 ```
 
-**B) WHMCS Checkout** (optional)
-
-* Build a WHMCS cart URL with `a=add&domain=register&domains[]=mybrand.com` (details vary by template). Handle return URL and webhook to update your app.
-
 ### 4.5 Configure DNS
 
-Depending on your strategy (see §8):
+There are two strategies (see §8):
 
-* **Change Nameservers**: `DomainUpdateNameservers` → point to your managed DNS (ns1/ns2)
+* **Change Nameservers**: `DomainUpdateNameservers` → point to your managed DNS (nsa/nsb)
 * **Set DNS Records**: via registrar DNS API (some registrars expose DNS through their module; otherwise use your DNS provider API directly).
 
 Examples:
@@ -142,7 +134,7 @@ Examples:
 action=DomainUpdateNameservers
 clientid=501
 domain=mybrand.com
-ns1=ns1.yourdns.com&ns2=ns2.yourdns.com
+ns1=nsa.ruachost.com&ns2=nsb.yourdns.com
 ```
 
 If using your DNS, create records:
