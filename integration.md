@@ -219,7 +219,7 @@ Taxes/fees:
 
 **A) Nameserver takeover (Managed DNS by you)**
 
-* Set NS to `ns1/2.yourdns.com`
+* Set NS to `nsa/b.ruachost.com`
 * Pros: full automation (A/AAAA/CNAME/TXT), wildcard support, ALIAS/ANAME at apex, easy SSL
 * Cons: you must run/operate DNS or use a DNS SaaS (Cloudflare/Route 53/NS1)
 
